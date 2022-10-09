@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="Raspberry.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Raspberry"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button Content="Pomiar" Click="Button_Click" VerticalAlignment="Top" Margin="0,555,0,0" HorizontalAlignment="Center">
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </UIElement.RenderTransform>
+        </Button>
+        <TextBox x:Name="txtBoxPrevTemp" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="99" Height="33" Margin="987,449,0,0"/>
+        <TextBox x:Name="txtBoxTemp" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="99" Margin="987,498,0,0"/>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Pomiar temperatury" VerticalAlignment="Top" FontSize="28" Width="284" TextAlignment="Center" Margin="0,395,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" TextWrapping="Wrap" Text="Poprzednia temperatura" VerticalAlignment="Top" Width="157" Margin="818,450,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" Text="Aktualna temperatura" VerticalAlignment="Top" Width="144" Margin="818,499,0,0"/>
+        <TextBlock x:Name="txtBlockStatus" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="0,600,0,0"/>
+    </Grid>
+</Page>
